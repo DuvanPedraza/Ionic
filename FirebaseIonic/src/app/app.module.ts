@@ -15,6 +15,7 @@ import {firebaseConfig} from '../environments/firebase-config';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Authentication} from '../services/authentication';
+import { Uploader } from '../services/files';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { Authentication} from '../services/authentication';
     StatusBar,
     SplashScreen,
     Authentication,
+    Uploader,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
